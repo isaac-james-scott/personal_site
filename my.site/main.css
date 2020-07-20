@@ -1,0 +1,122 @@
+body {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    font-style: normal;
+    margin: 0;   
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+header {
+    background: black;
+    display: inline-flexbox;
+    padding-top: 20px;
+    margin: 0px;  
+    text-align: right;
+}
+
+
+hr {
+    display: flex;
+    height: 2px;
+    border: 0;
+    border-top: 0.5px solid whitesmoke;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.feature-box {
+    display: flex;
+    padding: 10px;
+}
+
+.feature-box div{
+    background: black;
+    width: 100%;
+    margin: 2px;
+}
+
+.feature-box.header div{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.feature-box.subheader div{
+    text-align: center;
+    font-size: 30px;
+}
+
+.feature-box.content div{
+    color: rgb(190, 185, 185);
+    padding-bottom: 30px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.feature-box.title div{
+    text-align: left;
+    font-size: 50px;
+    padding-top: 100px;
+    width: 650px;
+}
+
+.feature-box.subtitle div{
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 300px;
+    width: 430px;
+}
+
+.feature-box.image div{
+    background: grey;
+    color: white;
+    text-align: center;
+    
+}
+
+.feature-box.subtext div{
+    text-align: left;
+    font-size: 20px;
+}
+
+img {
+    display: flex; 
+    padding-bottom: 60px;  
+}
+
+.center img{
+    display: inline-flex;
+    width: auto;
+
+  }
+
+
+ul {
+    list-style: none;
+    text-align: right;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: black;
+    padding: 20px;
+    margin: 70px;
+    text-align: center;
+}
