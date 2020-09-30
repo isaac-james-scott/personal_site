@@ -1,41 +1,128 @@
 body {
-    background: rgb(58, 58, 58);
+    background: black;
     color: white;
-    font-family: Helvetica Neue, Helvetica, Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     font-style: normal;
     margin: 0;   
-    padding: 0;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 header {
     background: black;
-    padding: 20px;
-    text-align: left;
+    display: inline-flexbox;
+    padding-top: 20px;
+    margin: 0px;  
+    text-align: right;
 }
 
-section {
-    background:rgb(59, 57, 57);
-    color: red;
-    padding: 100px;
+
+hr {
     display: flex;
-    flex-direction: row;
+    height: 2px;
+    border: 0;
+    border-top: 0.5px solid whitesmoke;
+    margin: 1em 0;
+    padding: 0;
 }
 
-div {
-    background: whitesmoke;
-    color: black;
-    font-size: 150px;
-    margin: auto;
-    text-align: center;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+  
+.feature-box {
+    display: flex;
+    padding: 10px;
 }
+
+.feature-box div{
+    background: black;
+    width: 100%;
+    margin: 2px;
+}
+
+.feature-box.header div{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.feature-box.subheader div{
+    text-align: center;
+    font-size: 30px;
+}
+
+.feature-box.content div{
+    color: rgb(190, 185, 185);
+    padding-bottom: 30px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.feature-box.title div{
+    text-align: left;
+    font-size: 50px;
+    padding-top: 100px;
+    width: 650px;
+}
+
+.feature-box.subtitle div{
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 300px;
+    width: 430px;
+}
+
+
+.feature-box.subtext div{
+    text-align: left;
+    font-size: 20px;
+}
+
+.flexbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 50px;
+}
+
+.flexbox-item{
+    width: 200px;
+    margin: 5px;
+    background-color: rgb(206, 206, 201);
+}
+
+.flexbox-item-1{
+    flex: 1;
+}
+
+.flexbox-item-2{
+    flex: 1;
+}
+
+.flexbox-item-3{
+    flex: 1;
+}
+
+.flexbox-item-4{
+    flex: 1;
+}
+
+  
+.imgwrap {
+    width: 50%; /*or whatever you choose*/
+    margin: 1px;
+ }
+ .imgwrap img {
+    display: block;
+    width: 100%;
+    max-width: 500px; /*actual image width*/
+    height: auto; /* maintain aspect ratio*/
+    margin: auto; /*optional centering of image*/
+ }
+  
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    list-style: none;
     text-align: right;
 }
 
@@ -43,6 +130,7 @@ li {
     display: inline-block;
     margin-right: 20px;
 }
+
 
 a {
     text-decoration: none;
@@ -52,9 +140,10 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 footer {
     background: black;
-    padding: 20px 10px;
+    padding: 20px;
+    margin: 70px;
     text-align: center;
 }
-
