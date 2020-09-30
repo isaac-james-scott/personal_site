@@ -26,6 +26,7 @@ hr {
     padding: 0;
 }
 
+  
 .feature-box {
     display: flex;
     padding: 10px;
@@ -70,29 +71,55 @@ hr {
     width: 430px;
 }
 
-.feature-box.image div{
-    background: grey;
-    color: white;
-    text-align: center;
-    
-}
 
 .feature-box.subtext div{
     text-align: left;
     font-size: 20px;
 }
 
-img {
-    display: flex; 
-    padding-bottom: 60px;  
+.flexbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 50px;
 }
 
-.center img{
-    display: inline-flex;
-    width: auto;
+.flexbox-item{
+    width: 200px;
+    margin: 5px;
+    background-color: rgb(206, 206, 201);
+}
 
-  }
+.flexbox-item-1{
+    flex: 1;
+}
 
+.flexbox-item-2{
+    flex: 1;
+}
+
+.flexbox-item-3{
+    flex: 1;
+}
+
+.flexbox-item-4{
+    flex: 1;
+}
+
+  
+.imgwrap {
+    width: 50%; /*or whatever you choose*/
+    margin: 1px;
+ }
+ .imgwrap img {
+    display: block;
+    width: 100%;
+    max-width: 500px; /*actual image width*/
+    height: auto; /* maintain aspect ratio*/
+    margin: auto; /*optional centering of image*/
+ }
+  
 
 ul {
     list-style: none;
